@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color: grey;
+            border: 1px solid black;
+        }
+        td , th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        td.num{
+            text-align: right;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        tbody > :nth-child(even){ /** odd 2n-1**/
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        table
+            caption
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>Populacao das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num"> 45 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 000 000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num"> 14 000 000</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num"> 11 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num"> 11 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9 000 000</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num"> 9 000 000</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num"> 8 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num"> 7 000 000</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num"> 7 000 000</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num"> 7 000 000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num"> 4 000 000</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num"> 4 000 000</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num"> 4 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num"> 3 000 000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num"> 3 000 000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num"> 3 000 000</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num"> 3 000 000</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num"> 3 000 000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num"> 2 000 000</td>
+            </tr>
+            <tr>
+                <td>Serjipe</td>
+                <td class="num"> 2 000 000</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td class="num"> 1 000 000</td>
+            </tr>
+            <tr>
+                <td>Tocantis</td>
+                <td class="num"> 1 000 000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num"> 800 000</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">  800 000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">  600 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Todal de habitantes</th>
+                <td class="num"><strong>210 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
