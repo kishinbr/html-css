@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span class="material-symbols-outlined">
+                location_on
+                </span>Logo</h1>
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <div class="menu">
+            <menu>
+                <a href="#">Flight</a>
+                <a href="#">Hotel</a>
+                <a href="#">Rental</a>
+            </menu>
+            <h2>Travel the world with us</h2>
+            <form action="viajar.php">
+                <label for="ifrom">From</label><input type="text" name="from" id="ifrom" placeholder="Depoarting from">
+                <label for="ito">To</label><input type="text" name="to" id="ito" placeholder="Arrinving at">
+                <input type="button" value="Seach and find dates">
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="img1">
+            <h2>Good Offers Right Now</h2>
+            <p>up to 50% discount</p>
+
+
+        </div>
+        <div class="container" id="img2">
+            <h2>Explore Nature</h2>
+            <p>Travel with us and see narute at its finest</p>
+
+            
+        </div>
+    </main>
+    <footer>
+        <div class="oferta">
+            <h2>Get the best offert first!</h2>
+            
+            <p>Join our newsletter.</p>
+
+            <form action="email.php">
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" placeholder="Your Email Address">
+                <a href="#" class="botaov"> Subscribe</a>
+            </form>
+        </div>
+        <div class="contato">
+            <h2>Contact</h2>
+            <p>Let us book your nest trip!</p>
+            <div class="dados">
+                <p><span class="material-symbols-outlined">location_on</span>Chigaco, US</p>
+                <p><span class="material-symbols-outlined">call</span>Phone:+00 151515</p>
+                <p><span class="material-symbols-outlined">mail</span>Email:mail@gmail.com</p>
+            </div>
+            <form action="contato.php">
+                <input type="text" name="name" id="iname" placeholder="Name">
+                <input type="email" name="email" id="iemail" placeholder="Email">
+                <input type="text" name="message" id="imessage" placeholder="Message">
+                <a href="#">SEND MESSAGE</a>
+            </form>
+        </div>
+        <div class="final">
+            <p>Find Us On</p>
+            <span> 
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </span>
+            
+            <p> Powered by <a href="#">w3css</a></p>
+        </div>
+    </footer>
+</body>
+</html>

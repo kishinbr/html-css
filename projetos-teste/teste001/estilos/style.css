@@ -1,0 +1,131 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F1F1F1;
+}
+/*header cabecalho*/
+header > div.logo{
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color:#F44336 ;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ofertas*/
+div.oferta{
+    background-color: #606060;
+    padding: 30px 10px 10px 10px;
+    color: white;
+}
+div.oferta p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.oferta > form > input {
+    display: block;
+    padding: 10px;
+    width: 95vw;
+}
+
+div.oferta > form > a{
+    display: block;
+    background-color: #F38981;
+    width: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/*Contato */
+
+div.contato{
+    margin: 10px;
+    color: #606060;
+}
+div.contato,  div.contato > h2{
+    margin-top: 30px;
+    color: #606060;
+}
+div.contato > p {
+    margin-top: 20px;
+}
+div.contato > form > input{
+    display: block;
+    width: 95vw;
+    height: 50px;
+    margin-top: 20px;
+    padding: 5px;
+}
+div.contato > div.dados {
+    display: flex;
+    margin-top: 20px;
+    flex-flow: column nowrap;
+}
+div.contato > div.dados > p {
+    padding-top: 5px;
+}
+
+div.contato > div.dados > p > span{
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+div.contato > form > a{
+    display: block;
+    background-color: black;
+    width: 180px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 15px 15px 15px 15px;  
+}
+
+
+
+/*roda pe final */
+div.final{
+    font-size: 1em;
+    text-align: center;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.048);
+    margin-bottom: 30px;
+}
+
+div.final > span > a {
+    padding: 30px 0px 30px 0px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #606060;
+    padding-left: 5px;
+}
+div.final > p > a {
+    color: #606060;
+}
