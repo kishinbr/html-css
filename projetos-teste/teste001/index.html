@@ -17,32 +17,90 @@
                 </span>Logo</h1>
             <span class="material-symbols-outlined">search</span>
         </div>
-        <div class="menu">
-            <menu>
-                <a href="#">Flight</a>
-                <a href="#">Hotel</a>
-                <a href="#">Rental</a>
-            </menu>
-            <h2>Travel the world with us</h2>
-            <form action="viajar.php">
-                <label for="ifrom">From</label><input type="text" name="from" id="ifrom" placeholder="Depoarting from">
-                <label for="ito">To</label><input type="text" name="to" id="ito" placeholder="Arrinving at">
-                <input type="button" value="Seach and find dates">
-            </form>
-        </div>
+
+        <div class="backgroundmenu">
+            <div class="quadro">
+
+                <div class="menu">
+                <menu>
+                    <a href="#"><span class="material-symbols-outlined">travel</span>Flight</a>
+                    <a href="#"><span class="material-symbols-outlined">hotel</span>Hotel</a>
+                    <a href="#"><span class="material-symbols-outlined">directions_car</span>Rental</a>
+                </menu>
+                </div> <!-- fecha menu-->
+
+            
+
+                <div class="pesquisa">
+                    <h2>Travel the world with us</h2>
+
+                    <form action="viajar.php">
+                        <div>
+                            <label for="ifrom">From</label>
+                            <input type="text" name="from" id="ifrom" placeholder="Depoarting from">
+                        </div>
+                        <div>
+                            <label for="ito">To</label>
+                            <input type="text" name="to" id="ito" placeholder="Arrinving at">
+                        </div>
+                    </form>
+                    <a href="#">Search and find dates</a>
+                </div> <!-- fecha pesquisa-->
+            </div> <!-- fecha quadro-->
+        </div> <!-- fecha background-->
+    </div>
     </header>
     <main>
-        <div class="container" id="img1">
+        <div class="container">
             <h2>Good Offers Right Now</h2>
             <p>up to 50% discount</p>
 
+            <div class="grid">
+                <div class="esquerda">
+                    <img src="imagens/cinqueterre.jpg" alt="terre">
+                    <div class="overlay">Cinque Terre</div>
+                </div>
+
+                <div class="direita">
+                    
+                    <div class="grade">
+                        <img src="imagens/newyork.jpg" alt="terre">
+                        <div class="overlay">New York</div>
+                    </div>
+
+                    <div class="grade">
+                        <img src="imagens/sanfran.jpg" alt="terre">
+                        <div class="overlay">São Francisco</div>
+                    </div>
+
+                    <div class="grade">
+                        <img src="imagens/pisa.jpg" alt="terre">
+                        <div class="overlay">Pisa</div>
+                    </div>
+                    
+                    <div class="grade">
+                        <img src="imagens/paris.jpg" alt="terre"><div class="overlay">Paris</div>
+                    </div>
+
+                </div>
+
+            </div><!-- fecha grid-->
 
         </div>
-        <div class="container" id="img2">
+
+        <div>
             <h2>Explore Nature</h2>
             <p>Travel with us and see narute at its finest</p>
+            <div>
+                <div class="img3">
+                    
+                </div>
 
-            
+                <div class="img3">
+                    
+                </div>
+
+            </div>   
         </div>
     </main>
     <footer>

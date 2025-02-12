@@ -19,6 +19,148 @@ header > div.logo{
     padding: 5px;
 }
 
+/*header background*/
+header > div.backgroundmenu{
+    background-image: url('../imagens/london.jpg');
+    width: 100vw;
+    height: 637px;
+    display: flex;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+/*header quadro*/
+header div.quadro  {
+    background-color: white;
+    width: 80vw;
+    display: block;
+    margin: auto;
+}
+/*header quadro menu*/
+header  menu{
+    display: flex;
+    flex-flow: row nowrap;
+}
+header  menu > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    flex: auto;
+}
+header menu > a:first-child{
+    background-color: #F44336;
+}
+
+header  menu > a > span{
+    padding-right: 15px;
+}
+/* formulario pesquisa*/
+
+header div.pesquisa {
+    height: 200px;
+}
+header div.pesquisa > h2{
+    font-size: 2em;
+    margin-top: 15px;
+    padding: 10px;
+}
+header form { 
+    display: flex;
+    
+}
+form > div { 
+    padding: 10px;
+    width: 50%;
+    
+}
+header div.pesquisa input{
+    height: 40px;
+    width: 100%;
+}
+
+/*botao da pesquisa*/
+header div.pesquisa >  a {
+    display: block;
+    background-color: #616161;
+    width: 180px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+/* imagens */
+
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.container h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 5px;
+
+}
+.container p {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.grid {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.esquerda {
+    flex: 1;
+    position: relative;
+    
+}
+
+.esquerda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.direita {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.direita .grade {
+    flex: 1 1 calc(50% - 5px);
+    position: relative;
+}
+.grade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* overlay */
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+}
 
 
 
@@ -31,9 +173,11 @@ header > div.logo{
 
 
 
-
-
-
+footer{
+    width: 80vw;
+    display: block;
+    margin: auto;
+}
 /*ofertas*/
 div.oferta{
     background-color: #606060;
@@ -47,7 +191,7 @@ div.oferta p {
 div.oferta > form > input {
     display: block;
     padding: 10px;
-    width: 95vw;
+    width: 100%;
 }
 
 div.oferta > form > a{
@@ -77,7 +221,7 @@ div.contato > p {
 }
 div.contato > form > input{
     display: block;
-    width: 95vw;
+    width: 100%;
     height: 50px;
     margin-top: 20px;
     padding: 5px;
