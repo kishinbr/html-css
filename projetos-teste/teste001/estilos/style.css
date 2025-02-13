@@ -17,29 +17,18 @@ header > div.logo{
     justify-content: space-between;
     align-items: center;
     color:#F44336 ;
-    padding: 16px;
-    height: 52px;
+    height: 50px;
 }
 span#cinza{
     color: #606060;
 }
 
 /*header background*/
-header > div.backgroundmenu{
-    background-image: url('../imagens/london.jpg');
-    width: 100%;
-    height: 637px;
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
-}
+
 /*header quadro*/
 header div.quadro  {
     background-color: white;
-    width: 888px;
-    height: 258px;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -47,7 +36,6 @@ header div.quadro  {
 header  menu{
     display: flex;
     flex-flow: row nowrap;
-    
 }
 header  menu > a{
     display: flex;
@@ -57,7 +45,6 @@ header  menu > a{
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
     height: 38px;
     flex: auto;
 }
@@ -67,30 +54,29 @@ header menu > a:first-child{
 
 header  menu > a > span{
     padding-right: 15px;
+    
 }
 
 /* formulario pesquisa*/
 
 header div.pesquisa {
-    height: 220px;
+    height: 282px;
+    
 }
 header div.pesquisa > p{
     font-size: 1.3em;
-    padding: 35px 0px 0px 16px;
+    padding: 30px 0px 16px 16px;
+    
 }
-
 header form { 
     display: flex;
-    
+    flex-flow: column nowrap;
 }
 
 form > div { 
-    padding: 16px 0px 16px 16px;
-    width: 50%;
+    padding: 0px 16px 0px 16px;
 }
-.p16px{
-    padding-right: 16px;
-}
+
 header div.pesquisa input{
     height: 40px;
     width: 100%;
@@ -105,14 +91,14 @@ header div.pesquisa >  a {
     text-align: center;
     text-decoration: none;
     padding: 16px;
-    margin: 0px 0px 30px 16px;
+    margin: 16px 0px 16px 16px;
     
 }
 /* imagens */
 
 
 .container {
-    width: 80vw;
+    width: 95%;
     margin: auto;
 }
 
@@ -121,6 +107,7 @@ header div.pesquisa >  a {
     padding-bottom: 20px;
     font-size: 24px;
     margin-bottom: 5px;
+    
 
 }
 .container p {
@@ -130,32 +117,31 @@ header div.pesquisa >  a {
 
 .grid {
     display: flex;
-    gap: 10px;
-    width: 100%;
+    flex-flow: column nowrap;
+    
 }
 
 .esquerda {
-    flex: 1;
     position: relative;
-    
 }
 
 .esquerda img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .direita {
-    flex: 1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-flow: column nowrap;
 }
 
 .direita .grade {
-    flex: 1 1 calc(50% - 5px);
     position: relative;
+}
+.direita img{
+    margin-bottom: 10px;
 }
 .grade img {
     width: 100%;
@@ -165,17 +151,17 @@ header div.pesquisa >  a {
 /* overlay */
 .overlay {
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     left: 10px;
     color: white;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 1.2em;
 }
 /* 2 tela de imagens */
 
 .container2{
     
-    width: 80vw;
+    width: 95%;
     height: auto;
     margin: auto;
     
@@ -196,24 +182,20 @@ header div.pesquisa >  a {
 .grade2{
     display: flex;
     margin-top: 10px;
-    
+    gap: 15px;
     height: auto;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 .esquerda1{
     background-color: white;
-    width: calc(50% - 10px);
-    margin-right: 10px;
+    width: 100%;
     height: auto;
     
 }
 .esquerda2{
     background-color: white;
-    width: calc(50% - 10px);
-    margin-left: 10px;
+    width: 100%;
     height: auto;
-    
-    
 }
 .grade2 img{
     width: 100%;
@@ -235,18 +217,9 @@ header div.pesquisa >  a {
     margin-left: 15px;
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
+/*footer*/
 footer{
-    
-    width: 80vw;
+    width: 95%;
     display: block;
     margin: auto;
 }
@@ -322,6 +295,7 @@ div.contato > form > a{
     text-align: center;
     text-decoration: none;
     margin-top: 20px;
+    margin-bottom: 30px;
     padding: 15px 15px 15px 15px;  
 }
 
