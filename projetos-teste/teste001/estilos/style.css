@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -16,16 +17,19 @@ header > div.logo{
     justify-content: space-between;
     align-items: center;
     color:#F44336 ;
-    padding: 5px;
+    padding: 16px;
+    height: 52px;
+}
+span#cinza{
+    color: #606060;
 }
 
 /*header background*/
 header > div.backgroundmenu{
     background-image: url('../imagens/london.jpg');
-    width: 100vw;
+    width: 100%;
     height: 637px;
     display: flex;
-    border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -34,7 +38,8 @@ header > div.backgroundmenu{
 /*header quadro*/
 header div.quadro  {
     background-color: white;
-    width: 80vw;
+    width: 888px;
+    height: 258px;
     display: block;
     margin: auto;
 }
@@ -42,6 +47,7 @@ header div.quadro  {
 header  menu{
     display: flex;
     flex-flow: row nowrap;
+    
 }
 header  menu > a{
     display: flex;
@@ -52,6 +58,7 @@ header  menu > a{
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    height: 38px;
     flex: auto;
 }
 header menu > a:first-child{
@@ -61,24 +68,28 @@ header menu > a:first-child{
 header  menu > a > span{
     padding-right: 15px;
 }
+
 /* formulario pesquisa*/
 
 header div.pesquisa {
-    height: 200px;
+    height: 220px;
 }
-header div.pesquisa > h2{
-    font-size: 2em;
-    margin-top: 15px;
-    padding: 10px;
+header div.pesquisa > p{
+    font-size: 1.3em;
+    padding: 35px 0px 0px 16px;
 }
+
 header form { 
     display: flex;
     
 }
+
 form > div { 
-    padding: 10px;
+    padding: 16px 0px 16px 16px;
     width: 50%;
-    
+}
+.p16px{
+    padding-right: 16px;
 }
 header div.pesquisa input{
     height: 40px;
@@ -89,13 +100,12 @@ header div.pesquisa input{
 header div.pesquisa >  a {
     display: block;
     background-color: #616161;
-    width: 180px;
+    width: 200px;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
+    padding: 16px;
+    margin: 0px 0px 30px 16px;
     
 }
 /* imagens */
@@ -161,9 +171,70 @@ header div.pesquisa >  a {
     padding: 5px 10px;
     font-size: 14px;
 }
+/* 2 tela de imagens */
 
+.container2{
+    
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    
+}
+.container2 > h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    
 
+}
+.containe2 > p {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
 
+.grade2{
+    display: flex;
+    margin-top: 10px;
+    
+    height: auto;
+    flex-flow: row wrap;
+}
+.esquerda1{
+    background-color: white;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    height: auto;
+    
+}
+.esquerda2{
+    background-color: white;
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    height: auto;
+    
+    
+}
+.grade2 img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    
+}
+
+.descricao > h2 , .descricao > p{
+    padding: 15px;
+    color: #606060;
+
+}
+.descricao > a {
+    display: block;
+    color: #606060;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -174,12 +245,14 @@ header div.pesquisa >  a {
 
 
 footer{
+    
     width: 80vw;
     display: block;
     margin: auto;
 }
 /*ofertas*/
 div.oferta{
+    margin-top: 30px;
     background-color: #606060;
     padding: 30px 10px 10px 10px;
     color: white;

@@ -12,10 +12,10 @@
 <body>
     <header>
         <div class="logo">
-            <h1><span class="material-symbols-outlined">
+            <h1><span class="material-symbols-outlined" >
                 location_on
                 </span>Logo</h1>
-            <span class="material-symbols-outlined">search</span>
+            <a href="#"><span class="material-symbols-outlined" id="cinza">search</span></a>
         </div>
 
         <div class="backgroundmenu">
@@ -32,15 +32,15 @@
             
 
                 <div class="pesquisa">
-                    <h2>Travel the world with us</h2>
+                    <p>Travel the world with us</p>
 
                     <form action="viajar.php">
                         <div>
-                            <label for="ifrom">From</label>
+                            <label for="ifrom" class="p16px">From</label>
                             <input type="text" name="from" id="ifrom" placeholder="Depoarting from">
                         </div>
-                        <div>
-                            <label for="ito">To</label>
+                        <div class="p16px">
+                            <label for="ito" >To</label>
                             <input type="text" name="to" id="ito" placeholder="Arrinving at">
                         </div>
                     </form>
@@ -88,16 +88,31 @@
 
         </div>
 
-        <div>
+        <div class="container2">
             <h2>Explore Nature</h2>
             <p>Travel with us and see narute at its finest</p>
-            <div>
-                <div class="img3">
+
+            <div class="grade2">
+
+                <div class="esquerda1">
+                    <img src="imagens/ocean.jpg" alt="oceano">
                     
+                    <div class="descricao">
+                        <h2>West coast, Norway</h2>
+                        <p>Roundtrip from $79</p>
+                        <p>Praesent tincidunt sed tells ut rutrum sed vitae justo</p>
+                        <a href="#">Buy Ticket</a>
+                    </div>
                 </div>
 
-                <div class="img3">
-                    
+                <div class="esquerda2">
+                    <img src="imagens/mountains.jpg" alt="mountains">
+                    <div class="descricao">
+                        <h2>Mountains, Austria</h2>
+                        <p>One-way from $39</p>
+                        <p>Praesent tincidunt sed tells ut rutrum sed vitae justo</p>
+                        <a href="#">Buy Ticket</a>
+                    </div>
                 </div>
 
             </div>   
