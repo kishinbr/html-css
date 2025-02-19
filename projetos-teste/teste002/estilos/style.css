@@ -1,0 +1,266 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+header{
+    background-image: url('../imagens/desktop/image-hero.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+}
+
+/*menu*/
+.gridmenu{
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    padding-top: 64px;
+    margin: auto;
+}
+.title1{
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+    
+}
+menu{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about1 > a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding:15px;
+    
+    
+}
+/*animacao*/
+.about1 a::after{
+    content: ""; 
+    position: absolute;
+    left: 50%;
+    bottom: 0px;  
+    width: 0;
+    height: 2px;
+    background-color: white;  
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;  
+    
+}
+.about1 > a:hover::after {
+    width: 100%;  
+    left: 0%;
+}
+
+/*quadrado*/
+.gridmenu2{
+    width: 80%;
+    margin: auto;
+}
+.quadrado{
+    margin-top: 130px;
+    height: 276px;
+    width: 50%;
+    border: 2px solid white;
+    
+}
+.texto{
+    color: white;
+    font-size: 3.5em; 
+    padding: 40px;
+    letter-spacing: 20px;
+}
+
+
+/*main imagem e texto*/
+main > section.grade{
+    width: 80%;
+    margin: auto;
+    
+}
+.container{
+    display: flex;
+    align-items: end;
+    
+}
+.vr-image img {
+    margin-top: 160px;
+    width: 730px;
+    height: 500px;
+}
+.textoc{
+    background-color: white;
+    height: 300px;
+    margin-left: -100px;
+    position: relative;
+}
+.textoc > h2 {
+    padding: 95px 0px 0px 95px;
+    font-weight: lighter;
+    font-size: 2em;
+    
+}
+.textoc > p {
+    padding: 5px 0px 0px 95px;
+    bottom: 0;
+    position: absolute;
+}
+
+/*grade das imagens*/
+.gradeimagens{
+    margin: auto;
+    margin-top: 220px;
+    width: 80%;
+    height: auto;
+
+}
+.titulobotao{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 90px;
+    
+    
+}
+.ourcreation > h2{
+    font-size: 3em;
+    font-weight: lighter;
+    
+}
+.seeall > a{
+    
+    text-decoration: none;
+    color: black;
+    padding: 10px 38px;
+    font-weight: bold;
+    border: 2px solid black;
+
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+    
+}
+/*animacao*/
+.seeall > a:hover{
+    
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+.gridimagens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.item {
+    position: relative;
+    width: 25%;
+    margin-top: 35px;
+}
+.item img {
+    width: 90%;
+    display: block;
+}
+/*animacao*/
+.item:hover {
+    transform: translateY(-35px);
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.5s ease; 
+}
+.overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*Footer*/
+footer{
+    margin-top: 180px;
+    background-color: black;
+}
+footer > section{
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    height: 160px;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+}
+.title2{
+    width: 50%;
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+}
+.about{
+    width: 50%;
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    width: 50%;
+}
+.social > a   {
+    text-decoration: none;
+    color: white;
+    padding:10px 0px 10px 25px;
+    font-size: 1.5em;
+}
+.about > a {
+    text-decoration: none;
+    color: white;
+    padding:10px 25px 10px 0px;
+    position: relative;
+    
+    
+}
+.rights{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+
+.about a::after{
+    content: ""; 
+    position: absolute;
+    left: 0%;
+    bottom: 0px;  
+    width: 0;
+    height: 2px;
+    background-color: white;  
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;  
+    
+}
+.about > a:hover::after {
+    width: 80%;  
+    left: 0%;
+}
