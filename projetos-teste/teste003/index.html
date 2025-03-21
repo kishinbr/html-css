@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSURE</title>
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!--LOGO E MENU-->
+        <div class="container_header1">
+            <!--IMAGEM DA LOGO-->
+            <div class="imginsure">
+                <img src="imagens/logo.svg" alt="logo">
+            </div>
+            <div class="burguer_div">
+                <img src="imagens/icon-hamburger.svg" alt="burguer" class="menuburguer" onclick="clickMenu()">
+            </div>
+            <!--MENU-->
+            <div class="lista_menu" >
+                <ul>
+                <li class="item_menu">HOW WE WORK</li>
+                <li class="item_menu">BLOG</li>
+                <li class="item_menu">ACCONUT</li>
+                <li class="item_menu" id="botao">VIEW PLANS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_click" id="itens">
+            <ul>
+                <li class="item_menu2">HOW WE WORK</li>
+                <li class="item_menu2">BLOG</li>
+                <li class="item_menu2">ACCONUT</li>
+                <li class="item_menu2">VIEW PLANS</li>
+                </ul>
+        </div>
+        <!--HEADER-->
+        <div class="container_header2">
+            <div class="container_back">
+                <!--TEXTO-->
+                <div class="texto">
+                    <h1>Humanizing your insurance.</h1>
+                    <p>
+                        Get your life insurance coverage easier and faster.
+                        We blend our expertise and technology to help you find the plan that's right for you.
+                        Ensure you and your loved ones are protected.
+                    </p>
+                    <a href="#">VIEW PLANS</a>
+                    <!--BACKGROUNDS IMG-->
+                </div>
+                
+                <div class="imgpessoas">
+                </div>
+              <!--  <div class="imgesquerda">
+                </div>
+                <div class="imgdireita"></div>-->
+            </div>
+        </div>
+
+    </header>
+    <!--MAIN-->
+    <main>
+        <div class="container_main">
+            <div class="flex_grid">
+                <!--MAIN TITULO-->
+                <div>
+                    <h2>We're different</h2>
+                </div>
+                <!--MAIN IMAGENS-->
+                    <div class="flex_texto">
+                        <div>
+                            <img src="imagens/icon-snappy-process.svg" alt="process">
+                            <h3>Snappy Process</h3>
+                            <p>Our application process can be completd in minutes, not hours.
+                            Don't get stuck filling in tedios forms.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="imagens/icon-affordable-prices.svg" alt="price">
+                            <h3>Affordable Prices</h3>
+                            <p>We don't want you worrying about high monthly costs.
+                            Our prices may be low, but we still offer the best coverage possible.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="imagens/icon-people-first.svg" alt="people">
+                            <h3>People First</h3>
+                            <p>Our plans aren't full of conditions and clauses to prevent payouts.
+                                We make sure you're covered when you need it.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <!--MAIN-->
+            <div class="howwework">
+                <h3>Find out more about how we work</h2>
+                <div>
+                <a href="#">HOW WE WORK</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="container_footer">
+            <!--FOOTER LOGO E REDE SOCIAL-->
+            <div class="menu_footer">
+                <div>
+                <img src="imagens/logo.svg" alt="logo">
+                </div>
+                <div class="r_social">
+                    <div class="item_rsocial">
+                        <img src="imagens/icon-facebook.svg" alt="facebook">
+                    </div>
+                    <div class="item_rsocial">
+                        <img src="imagens/icon-twitter.svg" alt="x">
+                    </div>
+                    <div class="item_rsocial">
+                        <img src="imagens/icon-pinterest.svg" alt="pinterest">
+                    </div>
+                    <div class="item_rsocial">
+                        <img src="imagens/icon-instagram.svg" alt="instagram">
+                    </div>
+                </div>
+            </div>
+            <!--FOOTER DE TEXTO-->
+            <div class="linha"></div>
+            <div class="texto_footer">
+                <div class="minimenu">
+                    
+                        <p>OUR COMPANY</p>
+                    
+                    
+                        <a href="#">HOW WE WORK</a> 
+                    
+                    
+                        <a href="#">WHY INSURE?</a> 
+                    
+                    
+                        <a href="#">VIEW PLANS</a> 
+                    
+                    
+                        <a href="#">REVIEWS</a> 
+                    
+                </div>
+                <div class="minimenu">
+                    
+                        <p>HELP ME</p>
+                    
+                        <a href="#">FAQ</a> 
+                    
+                        <a href="#">TERM OF USE</a> 
+                    
+                        <a href="#">PRIVACY POLICY</a> 
+                    
+                        <a href="#">COOKIES</a> 
+                    
+                    
+                </div>
+                <div class="minimenu">
+                    
+                        <p>CONTACT</p>
+                    
+                        <a href="#">SALES</a> 
+                    
+                        <a href="#">SUPPORT</a> 
+                    
+                        <a href="#">LIVE CHAT</a> 
+                    
+                </div>
+                <div class="minimenu">
+                    
+                        <p>OTHER</p>
+                        
+                            <a href="#">CARRERS</a> 
+                        
+                            <a href="#">PRESS</a> 
+                        
+                            <a href="#">LICENSES</a> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function clickMenu() {
+             if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        window.addEventListener("resize", function() {
+        
+        if (window.innerWidth > 500) {
+            itens.style.display = 'none';
+        }
+    })
+    </script>
+</body>
+</html>
