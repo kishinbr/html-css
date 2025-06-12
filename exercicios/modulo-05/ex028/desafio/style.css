@@ -1,0 +1,40 @@
+body{
+    background-color: grey;
+}
+div#container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+    height: 98vh;
+}
+.topo{
+    grid-area: 1/1/2/4;
+    background-color: cyan;
+  
+    align-content: center;
+    text-align: center;
+}
+.menu{
+    grid-area: 2/1/2/4;
+    background-color: red;
+    align-content: center;
+    text-align: center;
+}
+.principal{
+    grid-area: 3/1/3/3;
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.secundario{
+    grid-area: 3/3/4/4;
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.rodape{
+    grid-area: 4/1/5/4;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
