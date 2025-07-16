@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    
+    display: grid;
+    grid-template-columns: 3fr .5fr .5fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    
+}
+
+.view{
+    grid-area: 1/1/2/4;
+
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    align-content: end;
+
+    font-size: 3em;
+    border: 1px solid black;
+}
+.numeros{
+    grid-area: 2/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+.numeros div{
+    text-align: center;
+    padding: 10px;
+}
+.operador{
+    grid-area: 2/2/4/4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+.operador div{
+    text-align: center;
+    padding: 10px;
+}
+.operador div:not(.apagar):not(.deletar) {
+    grid-column: 1 / -1;
+}
+.apagar{
+    grid-column: 1 / 2;
+    grid-row: 5;
+}
+.deletar {
+    grid-column: 2 / 3;  
+    grid-row: 5;
+}
+
+.igual{
+    grid-area: 3/1/3/2;
+    text-align: center;
+    align-content: center;
+    
+}
+/*colocando animacao*/
+.item{
+    border: 1px solid black;
+}
+.item:hover{
+    background-color: lightgray;
+    
+}
